@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDCC6FD01D58374E001AE6C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC6FCF1D58374E001AE6C8 /* main.m */; };
+		DDCC6FD31D58374E001AE6C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC6FD21D58374E001AE6C8 /* AppDelegate.m */; };
+		DDCC6FD61D58374E001AE6C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC6FD51D58374E001AE6C8 /* ViewController.m */; };
+		DDCC6FD91D58374E001AE6C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCC6FD71D58374E001AE6C8 /* Main.storyboard */; };
+		DDCC6FDB1D58374E001AE6C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCC6FDA1D58374E001AE6C8 /* Assets.xcassets */; };
+		DDCC6FDE1D58374E001AE6C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCC6FDC1D58374E001AE6C8 /* LaunchScreen.storyboard */; };
+		DDCC6FFE1D5845D6001AE6C8 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC6FFD1D5845D6001AE6C8 /* ContactsViewController.m */; };
+		DDCC70071D584705001AE6C8 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC70061D584705001AE6C8 /* LeftViewController.m */; };
+		DDCC700B1D5847B2001AE6C8 /* UIView+leoAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC700A1D5847B2001AE6C8 /* UIView+leoAdd.m */; };
+		DDCC700E1D584B2E001AE6C8 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC700D1D584B2E001AE6C8 /* MessageViewController.m */; };
+		DDCC70111D584B5C001AE6C8 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC70101D584B5C001AE6C8 /* NewsViewController.m */; };
+		DDCC70141D5850A4001AE6C8 /* LeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC70131D5850A4001AE6C8 /* LeftView.m */; };
+		DDCC70171D585357001AE6C8 /* PSDrawerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC70161D585357001AE6C8 /* PSDrawerManager.m */; };
+		DDCC701E1D585911001AE6C8 /* PSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC701D1D585911001AE6C8 /* PSTabBarController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DDCC6FCB1D58374E001AE6C8 /* PSDrawerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSDrawerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCC6FCF1D58374E001AE6C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDCC6FD11D58374E001AE6C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDCC6FD21D58374E001AE6C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDCC6FD41D58374E001AE6C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DDCC6FD51D58374E001AE6C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DDCC6FD81D58374E001AE6C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDCC6FDA1D58374E001AE6C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDCC6FDD1D58374E001AE6C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDCC6FDF1D58374E001AE6C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDCC6FFC1D5845D6001AE6C8 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		DDCC6FFD1D5845D6001AE6C8 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		DDCC70051D584705001AE6C8 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		DDCC70061D584705001AE6C8 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		DDCC70091D5847B2001AE6C8 /* UIView+leoAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+leoAdd.h"; sourceTree = "<group>"; };
+		DDCC700A1D5847B2001AE6C8 /* UIView+leoAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+leoAdd.m"; sourceTree = "<group>"; };
+		DDCC700C1D584B2E001AE6C8 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		DDCC700D1D584B2E001AE6C8 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		DDCC700F1D584B5C001AE6C8 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		DDCC70101D584B5C001AE6C8 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		DDCC70121D5850A4001AE6C8 /* LeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftView.h; sourceTree = "<group>"; };
+		DDCC70131D5850A4001AE6C8 /* LeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftView.m; sourceTree = "<group>"; };
+		DDCC70151D585357001AE6C8 /* PSDrawerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDrawerManager.h; sourceTree = "<group>"; };
+		DDCC70161D585357001AE6C8 /* PSDrawerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDrawerManager.m; sourceTree = "<group>"; };
+		DDCC701C1D585911001AE6C8 /* PSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTabBarController.h; sourceTree = "<group>"; };
+		DDCC701D1D585911001AE6C8 /* PSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTabBarController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDCC6FC81D58374E001AE6C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDCC6FC21D58374E001AE6C8 = {
+			isa = PBXGroup;
+			children = (
+				DDCC6FCD1D58374E001AE6C8 /* PSDrawerController */,
+				DDCC6FCC1D58374E001AE6C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDCC6FCC1D58374E001AE6C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDCC6FCB1D58374E001AE6C8 /* PSDrawerController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDCC6FCD1D58374E001AE6C8 /* PSDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				DDCC70081D5847B2001AE6C8 /* lib */,
+				DDCC70021D584705001AE6C8 /* Left */,
+				DDCC6FE81D58380B001AE6C8 /* Message */,
+				DDCC6FE51D58380B001AE6C8 /* Contacts */,
+				DDCC6FE91D58380B001AE6C8 /* News */,
+				DDCC701B1D585911001AE6C8 /* TabBarVC */,
+				DDCC6FD11D58374E001AE6C8 /* AppDelegate.h */,
+				DDCC6FD21D58374E001AE6C8 /* AppDelegate.m */,
+				DDCC6FD41D58374E001AE6C8 /* ViewController.h */,
+				DDCC6FD51D58374E001AE6C8 /* ViewController.m */,
+				DDCC6FD71D58374E001AE6C8 /* Main.storyboard */,
+				DDCC6FDA1D58374E001AE6C8 /* Assets.xcassets */,
+				DDCC6FDC1D58374E001AE6C8 /* LaunchScreen.storyboard */,
+				DDCC6FDF1D58374E001AE6C8 /* Info.plist */,
+				DDCC6FCE1D58374E001AE6C8 /* Supporting Files */,
+			);
+			path = PSDrawerController;
+			sourceTree = "<group>";
+		};
+		DDCC6FCE1D58374E001AE6C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDCC6FCF1D58374E001AE6C8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDCC6FE51D58380B001AE6C8 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				DDCC6FFC1D5845D6001AE6C8 /* ContactsViewController.h */,
+				DDCC6FFD1D5845D6001AE6C8 /* ContactsViewController.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		DDCC6FE81D58380B001AE6C8 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				DDCC700C1D584B2E001AE6C8 /* MessageViewController.h */,
+				DDCC700D1D584B2E001AE6C8 /* MessageViewController.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		DDCC6FE91D58380B001AE6C8 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				DDCC700F1D584B5C001AE6C8 /* NewsViewController.h */,
+				DDCC70101D584B5C001AE6C8 /* NewsViewController.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		DDCC70021D584705001AE6C8 /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				DDCC70031D584705001AE6C8 /* View */,
+				DDCC70041D584705001AE6C8 /* ViewController */,
+			);
+			path = Left;
+			sourceTree = "<group>";
+		};
+		DDCC70031D584705001AE6C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDCC70121D5850A4001AE6C8 /* LeftView.h */,
+				DDCC70131D5850A4001AE6C8 /* LeftView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDCC70041D584705001AE6C8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DDCC70051D584705001AE6C8 /* LeftViewController.h */,
+				DDCC70061D584705001AE6C8 /* LeftViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DDCC70081D5847B2001AE6C8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				DDCC70091D5847B2001AE6C8 /* UIView+leoAdd.h */,
+				DDCC700A1D5847B2001AE6C8 /* UIView+leoAdd.m */,
+				DDCC70151D585357001AE6C8 /* PSDrawerManager.h */,
+				DDCC70161D585357001AE6C8 /* PSDrawerManager.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		DDCC701B1D585911001AE6C8 /* TabBarVC */ = {
+			isa = PBXGroup;
+			children = (
+				DDCC701C1D585911001AE6C8 /* PSTabBarController.h */,
+				DDCC701D1D585911001AE6C8 /* PSTabBarController.m */,
+			);
+			path = TabBarVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDCC6FCA1D58374E001AE6C8 /* PSDrawerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDCC6FE21D58374E001AE6C8 /* Build configuration list for PBXNativeTarget "PSDrawerController" */;
+			buildPhases = (
+				DDCC6FC71D58374E001AE6C8 /* Sources */,
+				DDCC6FC81D58374E001AE6C8 /* Frameworks */,
+				DDCC6FC91D58374E001AE6C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSDrawerController;
+			productName = PSDrawerController;
+			productReference = DDCC6FCB1D58374E001AE6C8 /* PSDrawerController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDCC6FC31D58374E001AE6C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Leiliang;
+				TargetAttributes = {
+					DDCC6FCA1D58374E001AE6C8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DDCC6FC61D58374E001AE6C8 /* Build configuration list for PBXProject "PSDrawerController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDCC6FC21D58374E001AE6C8;
+			productRefGroup = DDCC6FCC1D58374E001AE6C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDCC6FCA1D58374E001AE6C8 /* PSDrawerController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDCC6FC91D58374E001AE6C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCC6FDE1D58374E001AE6C8 /* LaunchScreen.storyboard in Resources */,
+				DDCC6FDB1D58374E001AE6C8 /* Assets.xcassets in Resources */,
+				DDCC6FD91D58374E001AE6C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDCC6FC71D58374E001AE6C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCC70071D584705001AE6C8 /* LeftViewController.m in Sources */,
+				DDCC6FFE1D5845D6001AE6C8 /* ContactsViewController.m in Sources */,
+				DDCC700B1D5847B2001AE6C8 /* UIView+leoAdd.m in Sources */,
+				DDCC70111D584B5C001AE6C8 /* NewsViewController.m in Sources */,
+				DDCC70141D5850A4001AE6C8 /* LeftView.m in Sources */,
+				DDCC70171D585357001AE6C8 /* PSDrawerManager.m in Sources */,
+				DDCC6FD61D58374E001AE6C8 /* ViewController.m in Sources */,
+				DDCC700E1D584B2E001AE6C8 /* MessageViewController.m in Sources */,
+				DDCC6FD31D58374E001AE6C8 /* AppDelegate.m in Sources */,
+				DDCC6FD01D58374E001AE6C8 /* main.m in Sources */,
+				DDCC701E1D585911001AE6C8 /* PSTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDCC6FD71D58374E001AE6C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDCC6FD81D58374E001AE6C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDCC6FDC1D58374E001AE6C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDCC6FDD1D58374E001AE6C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDCC6FE01D58374E001AE6C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDCC6FE11D58374E001AE6C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDCC6FE31D58374E001AE6C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PSDrawerController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Leiliang.PSDrawerController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDCC6FE41D58374E001AE6C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PSDrawerController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Leiliang.PSDrawerController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDCC6FC61D58374E001AE6C8 /* Build configuration list for PBXProject "PSDrawerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDCC6FE01D58374E001AE6C8 /* Debug */,
+				DDCC6FE11D58374E001AE6C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDCC6FE21D58374E001AE6C8 /* Build configuration list for PBXNativeTarget "PSDrawerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDCC6FE31D58374E001AE6C8 /* Debug */,
+				DDCC6FE41D58374E001AE6C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDCC6FC31D58374E001AE6C8 /* Project object */;
+}
