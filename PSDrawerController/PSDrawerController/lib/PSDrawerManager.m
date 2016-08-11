@@ -16,7 +16,7 @@
 
 @property (nonatomic, weak, readwrite) UIViewController *centerViewController;
 @property (nonatomic, weak, readwrite) UIView *leftView;
-@property (nonatomic, strong) UIScreenEdgePanGestureRecognizer *screenEdgePan;
+@property (nonatomic, strong) UIPanGestureRecognizer *pan;
 
 @end
 
@@ -42,7 +42,7 @@
     
     [self showShadow];
     
-    [self.centerViewController.view addGestureRecognizer:self.screenEdgePan];
+    [self.centerViewController.view addGestureRecognizer:self.pan];
 }
 
 - (void)hiddenShadow {
@@ -63,12 +63,12 @@
 
 - (void)beginDragResponse {
     if (!self.centerViewController.view) { return; }
-    [self.centerViewController.view addGestureRecognizer:self.screenEdgePan];
+    [self.centerViewController.view addGestureRecognizer:self.pan];
 }
 
 - (void)cancelDragResponse {
     if (!self.centerViewController.view) { return; }
-    [self.centerViewController.view removeGestureRecognizer:self.screenEdgePan];
+    [self.centerViewController.view removeGestureRecognizer:self.pan];
 }
 
 - (void)resetShowType:(PSDrawerManagerShowType)showType {
@@ -78,7 +78,6 @@
 
     switch (showType) {
         case PSDrawerManagerShowLeft: {
-            self.screenEdgePan.edges = UIRectEdgeRight;
             [UIView animateWithDuration:0.2f animations:^{
                 self.centerViewController.view.transform = rightScopeTransform;
                 [kAppDelegate window].subviews.firstObject.tx = self.centerViewController.view.tx / 3;
@@ -86,7 +85,6 @@
             break;
         }
         case PSDrawerManagerShowCenter: {
-            self.screenEdgePan.edges = UIRectEdgeLeft;
             [UIView animateWithDuration:0.2f animations:^{
                 self.centerViewController.view.transform = CGAffineTransformIdentity;
                 [kAppDelegate window].subviews.firstObject.tx = self.centerViewController.view.tx / 3;
@@ -94,13 +92,11 @@
             break;
         }
         case PSDrawerManagerShowLeftWithoutAnimation: {
-            self.screenEdgePan.edges = UIRectEdgeRight;
             self.centerViewController.view.transform = rightScopeTransform;
             [kAppDelegate window].subviews.firstObject.tx = self.centerViewController.view.tx / 3;
             break;
         }
         case PSDrawerManagerShowCenterWithoutAnimation: {
-            self.screenEdgePan.edges = UIRectEdgeLeft;
             self.centerViewController.view.transform = CGAffineTransformIdentity;
             [kAppDelegate window].subviews.firstObject.tx = self.centerViewController.view.tx / 3;
             break;
@@ -110,17 +106,17 @@
 
 #pragma mark -
 #pragma mark - getter methods
-- (UIScreenEdgePanGestureRecognizer *)screenEdgePan {
-    if (!_screenEdgePan) {
-        _screenEdgePan = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanAction:)];
-        _screenEdgePan.edges = UIRectEdgeLeft;
+- (UIPanGestureRecognizer *)pan {
+    if (!_pan) {
+        _pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanAction:)];
     }
-    return _screenEdgePan;
+    return _pan;
 }
 
 #pragma mark -
 #pragma mark - privite methods
-- (void)handlePanAction:(UIScreenEdgePanGestureRecognizer *)sender {
+//- (void)handlePanAction:(UIScreenEdgePanGestureRecognizer *)sender {
+- (void)handlePanAction:(UIPanGestureRecognizer *)sender {
     /** 注：
      *   [kAppDelegate window].subviews.firstObject.tx = sender.view.tx / 3;
      *   sender.view.tx / 3 的原因是要让中心控制器每向右移动一像素，左侧视图就向右移动 1/3 像素
@@ -151,11 +147,9 @@
     if (sender.state == UIGestureRecognizerStateEnded) {
         [UIView animateWithDuration:0.2f animations:^{
             if (sender.view.left > kScreenWidth * 0.5) {
-                self.screenEdgePan.edges = UIRectEdgeRight;
                 sender.view.transform = rightScopeTransform;
                 [kAppDelegate window].subviews.firstObject.tx = sender.view.tx / 3;
             } else {
-                self.screenEdgePan.edges = UIRectEdgeLeft;
                 sender.view.transform = CGAffineTransformIdentity;
                 [kAppDelegate window].subviews.firstObject.tx = sender.view.tx / 3;
             }
