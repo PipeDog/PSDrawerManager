@@ -67,7 +67,7 @@ LeftView *leftView = [[LeftView alloc] initWithFrame:CGRectMake(-self.window.wid
 
 Demo展示：
 
-![PSDrawerManager.gif](http://upload-images.jianshu.io/upload_images/1481785-f3047a9e4c90d072.gif?imageMogr2/auto-orient/strip)
+![PSDrawerManager.gif](PSDrawerManager.gif)
 
 如果对你有帮助的话，请给个star奥 😊 !!!
 谢谢大家 !!!
